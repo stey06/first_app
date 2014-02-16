@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '1.3.8'
+#gem 'sqlite3'
 #gem 'sqlite3', '1.3.8', group: :development
 #gem 'sqlite3', group: development
 #gem 'sqlite3', group: [:development, :test]
@@ -36,6 +36,14 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :production do
+  gem 'pg'
+end
+
+group :development, :test do
+  gem 'sqlite3', '1.3.8'
 end
 
 # Use ActiveModel has_secure_password
