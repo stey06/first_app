@@ -4,9 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 #gem 'sqlite3', '1.3.8', group: :development
 #gem 'sqlite3', group: development
-gem 'sqlite3', group: [:development, :test]
+#gem 'sqlite3', group: [:development, :test]
 
 # Use execjs JavaScript runtime
 gem 'execjs'
